@@ -1,0 +1,172 @@
+Product Requirements Document
+Study Planner Web Service
+
+1. Product Overview
+
+The product is a simple web-based study planner designed for students who need to manage their study tasks, deadlines, and progress in one place. Many students have multiple courses, assignments, exams, and personal study goals, but they often manage them separately through notebooks, chat messages, calendars, or memory. This can make it difficult to see what needs to be done first and how much progress has been made.
+
+This web service provides a clear and simple study management space where users can add study tasks, assign them to subjects, set priority levels, mark tasks as completed, and check their overall progress. The purpose of the service is not to replace a full calendar or learning management system, but to provide a lightweight and focused tool for daily study planning.
+
+The main target users are university students who want a simple way to organize their study workload. The service will help users reduce confusion, prioritize important tasks, and maintain consistent study habits.
+
+2. Target Users
+
+The primary target users are university students who take multiple courses and need to manage assignments, exams, and self-study tasks. These users often experience difficulty organizing deadlines and deciding which task to work on first.
+
+The service is especially useful for students who have several assignments or exams at the same time, want to check their study progress visually, need a simple planner without complicated functions, prefer a web-based tool that can be accessed easily, and want to separate tasks by subject and priority.
+
+3. Project Goals
+
+The main goal of this project is to create a simple, usable, and visually clear study planner website. The project goals are:
+
+1. Build a website where users can add and manage study tasks.
+2. Allow users to classify tasks by subject and priority.
+3. Provide a completion checkbox so users can track finished tasks.
+4. Show study progress through a simple progress indicator.
+5. Create at least three clearly separated pages or sections.
+6. Implement at least one meaningful JavaScript-based interactive feature.
+7. Deploy the final website publicly using Vercel.
+8. Make the website consistent with the PRD, feature list, and target user needs.
+
+4. Core User Scenario
+
+A university student has three important tasks this week: preparing for a control theory quiz, finishing a programming assignment, and reviewing lecture notes for an electronics course. The student opens the Study Planner website and goes to the planner section.
+
+First, the student enters a task title, selects the related subject, chooses a priority level, and adds the task to the planner. The task appears as a card or list item on the page. The student repeats this process for the other tasks. After completing one task, the student clicks the checkbox next to it. The task is marked as completed, and the progress percentage increases automatically.
+
+By using the website, the student can quickly see which tasks are still unfinished, which tasks have high priority, and how much study progress has been completed. This helps the student make better decisions about what to study next.
+
+5. Feature List
+
+Must-have:
+- Add Study Task: Users can enter a study task with a title, subject, and priority level.
+- Task List Display: Added tasks are displayed in a clear list or card layout.
+- Completion Checkbox: Users can mark tasks as completed.
+- Progress Tracker: The website calculates and displays the percentage of completed tasks.
+
+Should-have:
+- Subject Category: Users can organize tasks by subject name.
+- Priority Level: Users can select High, Medium, or Low priority for each task.
+- Delete Task: Users can remove tasks from the planner.
+- Priority Filter: Users can filter tasks by priority.
+
+Nice-to-have:
+- Study Tips Section: The website provides simple study tips or planning advice.
+- Responsive Design: The layout works reasonably well on different screen sizes.
+- Browser Storage: The task list is saved in the browser using localStorage.
+
+6. Page Structure
+
+The website has three main sections.
+
+Home Section:
+The Home section introduces the purpose of the Study Planner. It explains that the service helps students organize study tasks, manage priorities, and track progress. It includes a hero message and a button that leads users to the planner section.
+
+Planner Section:
+The Planner section is the main interactive part of the website. It includes an input form where users can type a task name, enter a subject, and choose a priority level. After the user clicks the add button, the task is displayed in the task list. Users can check completed tasks, delete tasks, and filter tasks by priority. This section also includes a progress tracker that automatically updates when tasks are completed or removed.
+
+Study Tips Section:
+The Study Tips section explains how the planner should be used effectively. It includes short tips such as breaking large tasks into smaller tasks, prioritizing urgent assignments, and reviewing completed tasks at the end of the day.
+
+7. Technical Requirements
+
+The website will be implemented as a simple front-end web service. A backend server or database is not required.
+
+Planned technologies:
+- HTML for page structure.
+- CSS for layout, typography, colors, and responsive design.
+- JavaScript for interactive features.
+- localStorage for saving tasks in the browser.
+- GitHub for source code management.
+- Vercel for online deployment.
+
+The project folder includes index.html, style.css, script.js, and README.md.
+
+8. Design Requirements
+
+The design should be simple, clean, and student-friendly. The visual style should help users focus on their tasks without unnecessary distraction.
+
+The design requirements are:
+- Use a clean layout with clear spacing.
+- Use readable fonts and appropriate font sizes.
+- Use a simple color scheme based on white, light gray, and blue.
+- Make the navigation easy to understand.
+- Display task cards or task rows clearly.
+- Use visual differences for priority levels.
+- Show completed tasks with a line-through effect.
+- Make the progress indicator easy to see.
+- Keep the interface simple enough for first-time users.
+
+9. Milestones
+
+PRD Completion: Define the product idea, users, goals, features, page structure, and technical requirements.
+First Prototype: Create the basic HTML structure with Home, Planner, and Study Tips sections.
+Styling Implementation: Add CSS layout, colors, typography, spacing, and task card design.
+JavaScript Interaction: Implement task addition, completion checkboxes, deletion, filtering, storage, and progress calculation.
+Testing and Improvement: Test the website, fix errors, and improve usability and layout.
+GitHub Upload: Organize source files and upload the project to a GitHub repository.
+Vercel Deployment: Deploy the final website using Vercel and check that the public link works.
+Final Documentation: Add README file and write the AI-assisted development report.
+
+10. Expected Final Outcome
+
+The final outcome will be a publicly accessible Study Planner website. The website will allow students to add study tasks, organize them by subject and priority, mark tasks as completed, filter tasks, delete tasks, and check their progress. The final project will include a PRD document, a working website, a GitHub repository, a Vercel deployment link, a README file, and an AI-assisted development report.
+
+
+AI-Assisted Development and Deployment Report
+
+1. AI Tools Used
+
+The main AI tool used for this project was ChatGPT. It was used as an assistant for planning, writing, and improving the web service. AI was not used as a replacement for understanding the project requirements. The generated code and text were reviewed and adjusted to match the assignment requirements.
+
+2. Tasks Assisted by AI
+
+AI was used for the following tasks:
+- Creating the structure of the PRD document.
+- Suggesting a suitable web service topic for the assignment.
+- Drafting HTML, CSS, and JavaScript files for the Study Planner website.
+- Improving the feature list and page structure.
+- Writing the README file.
+- Preparing the AI-assisted development report.
+
+3. Representative Prompts Used
+
+Prompt 1:
+"Write a PRD for a simple study planner web service. It should include product overview, target users, project goals, user scenario, feature list, page structure, technical requirements, design requirements, and milestones."
+
+Prompt 2:
+"Create a simple HTML, CSS, and JavaScript website for a study planner. It should have at least three sections, navigation, task input, task completion, delete function, priority selection, and progress calculation."
+
+Prompt 3:
+"Write a README file for the study planner project. Include project overview, main features, how to run the project locally, technologies used, and deployment URL."
+
+Prompt 4:
+"Review whether this website satisfies the assignment requirements: three sections, clear navigation, HTML/CSS styling, meaningful JavaScript interaction, GitHub repository, Vercel deployment, and README."
+
+4. Modified or Improved Parts
+
+The AI-generated result was modified and improved in several ways. The task feature was adjusted to include subject input, priority levels, completion checkboxes, delete buttons, progress calculation, and priority filtering. The visual design was also improved with a clearer layout, card-based task display, responsive design, and priority colors. The JavaScript code was reviewed to make sure tasks update correctly when users add, complete, delete, or filter tasks.
+
+The website also uses localStorage so that tasks remain saved in the browser after refreshing the page. This makes the service more useful as a study planner.
+
+5. Bugs, Errors, or Limitations Found
+
+During testing, several possible issues were considered:
+- The progress percentage should not cause an error when there are no tasks.
+- The task list should show an empty message when no tasks match the selected filter.
+- User input should be safely displayed to avoid unexpected HTML rendering.
+- The layout should still work on smaller screens.
+
+6. Fixes Applied
+
+The zero-task progress problem was fixed by setting the progress value to 0 when the total number of tasks is zero. Empty filter results are handled by displaying a clear "No tasks to show" message. User-entered text is processed through a simple escape function before being displayed. Responsive CSS rules were added so the layout changes from multi-column to single-column on smaller screens.
+
+7. Final Vercel Deployment URL
+
+This section should be updated after deployment:
+
+https://your-vercel-url.vercel.app
+
+8. Reflection
+
+Using AI helped speed up the planning and implementation process, especially in generating the first version of the PRD and website structure. However, the final project still required human review to check whether the features matched the PRD and assignment requirements. The AI-generated output was useful as a starting point, but the final website was tested and customized to make it coherent, usable, and aligned with the Study Planner concept.

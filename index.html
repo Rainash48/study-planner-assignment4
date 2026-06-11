@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Study Planner</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#planner">Planner</a>
+        <a href="#tips">Study Tips</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-text">
+        <p class="eyebrow">A simple planning tool for students</p>
+        <h1>Organize your study tasks and track your progress.</h1>
+        <p>
+          Study Planner helps students manage assignments, exam preparation,
+          and self-study tasks in one clear dashboard.
+        </p>
+        <a class="primary-button" href="#planner">Start Planning</a>
+      </div>
+
+      <div class="hero-card" aria-label="Example task summary">
+        <h2>Today&apos;s Focus</h2>
+        <div class="mini-task high">Control Theory Review</div>
+        <div class="mini-task medium">AI Programming Assignment</div>
+        <div class="mini-task low">Lecture Note Summary</div>
+      </div>
+    </section>
+
+    <section id="planner" class="section planner-section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Planner</p>
+        <h2>Create your study plan</h2>
+        <p>Add tasks by subject and priority. Complete tasks to update your progress.</p>
+      </div>
+
+      <div class="planner-grid">
+        <form id="taskForm" class="task-form">
+          <label for="taskTitle">Task Title</label>
+          <input id="taskTitle" type="text" placeholder="e.g., Review Bode plot notes" required />
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="e.g., Control Theory" required />
+
+          <label for="priority">Priority</label>
+          <select id="priority" required>
+            <option value="High">High</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Low">Low</option>
+          </select>
+
+          <button type="submit" class="primary-button">Add Task</button>
+        </form>
+
+        <div class="dashboard">
+          <div class="progress-card">
+            <div class="progress-text">
+              <span>Study Progress</span>
+              <strong id="progressPercent">0%</strong>
+            </div>
+            <div class="progress-bar" aria-label="Study progress">
+              <div id="progressFill"></div>
+            </div>
+            <p id="taskSummary">No tasks added yet.</p>
+          </div>
+
+          <div class="task-controls">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="High">High</button>
+            <button class="filter-btn" data-filter="Medium">Medium</button>
+            <button class="filter-btn" data-filter="Low">Low</button>
+          </div>
+
+          <ul id="taskList" class="task-list" aria-live="polite"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section tips-section">
+      <div class="section-heading">
+        <p class="eyebrow">Study Tips</p>
+        <h2>Use the planner effectively</h2>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip-card">
+          <h3>Break large tasks down</h3>
+          <p>Instead of writing “study for exam,” create smaller tasks such as “review lecture 3” or “solve practice problems.”</p>
+        </article>
+        <article class="tip-card">
+          <h3>Prioritize urgent work</h3>
+          <p>Use the High priority label for tasks that are important or close to the deadline.</p>
+        </article>
+        <article class="tip-card">
+          <h3>Review your progress</h3>
+          <p>At the end of the day, check completed tasks and decide what should be done next.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Study Planner Web Service · Assignment 4</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
