@@ -43,9 +43,11 @@ No backend server or database is required.
 
 ## Deployment URL
 
-Add your final Vercel link here after deployment:
+https://study-planner-assignment4.vercel.app
 
-`https://your-vercel-url.vercel.app`
+## GitHub Repository
+
+https://github.com/Rainash48/study-planner-assignment4
 
 ## AI-Assisted Development
 

@@ -163,9 +163,13 @@ The zero-task progress problem was fixed by setting the progress value to 0 when
 
 7. Final Vercel Deployment URL
 
-This section should be updated after deployment:
+Final deployed website:
 
-https://your-vercel-url.vercel.app
+https://study-planner-assignment4.vercel.app
+
+GitHub repository:
+
+https://github.com/Rainash48/study-planner-assignment4
 
 8. Reflection
 
