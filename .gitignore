@@ -1,1 +1,6 @@
 .vercel
+render-prd/
+render-ai-report/
+~$*.docx
+Product_Requirements_Document.docx
+AI_Assisted_Development_Report.docx
